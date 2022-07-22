@@ -19,11 +19,11 @@
 #top>div{
     margin: auto;
     border: 2px solid #f16631;
-    width:410px;
+    width:100%;
     border-radius: 8px;
 }
 #top input{
-    width:200px;
+    width:50%;
     text-align: left;
     font-size: 14px;
     border-radius: 2px;
@@ -32,7 +32,7 @@
     
 }
 #top button{
-    width:155.8px;
+    width:40%;
     background-color: #f16631;
     color: white;
     border: 0px;
@@ -247,7 +247,7 @@ iframe{
 }
 #main>div>div>img{
     margin-top: 30px;
-    width:40px;
+    width:15%;
 }
 #main>div:last-child{
     display: flex;
@@ -339,7 +339,7 @@ iframe{
 }
 #mainone>div>div>img{
     margin-top: 30px;
-    width:40px;
+    width:15%;
 }
 #mainone>div:last-child>button{
     font-size: 15px;
@@ -389,12 +389,12 @@ iframe{
     display: flex;
     justify-content: center;
     justify-content: space-between;
-    width:400px;
+    width:60%;
     margin: auto;
     margin-top: 80px;
 }
 #mid6>div>div:last-child>button{
-    padding:15px 40px;
+    padding:1% 5%;
     border-radius: 5px;
 }
 #mid6>div>div:last-child>button:first-child{
@@ -455,7 +455,7 @@ iframe{
     text-align: right;
 }
 #logos{
-    width:200px;
+    width:30%;
 }
 #crauser>button{
     position:absolute;
