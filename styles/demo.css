@@ -1,0 +1,10 @@
+#demoform>input{
+    width:40%;
+    height:20px;
+    padding:5px;
+}
+#demoform>select{
+    width:41%;
+    height:35px;
+    padding:5px;
+}
