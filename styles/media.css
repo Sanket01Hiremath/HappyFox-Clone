@@ -1,32 +1,95 @@
-@media screen and (min-width:400px) and (max-width:930px)
-{
-    /* navbar */
-    #navbar{
+@media screen and (min-width:950px){
+    #navbar,#sticky,#feature{
+        display: none;
+    }
+}
+
+@media screen and (max-width:950px){
+    #navbar1,#sticky1{
+        display: none;
+    }
+    #navlinks,#stickylinks {
+        height: 100%; /* 100% Full-height */
+        width: 0; /* 0 width - change this with JavaScript */
+        position: fixed; /* Stay in place */
+        z-index: 15; /* Stay on top */
+        top: 0; /* Stay at the top */
+        left: 0;
+        background-color: rgb(255, 255, 255); /* Black*/
+        overflow-x: hidden; /* Disable horizontal scroll */
+        padding-top: 60px; /* Place content 60px from the top */
+        transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+      }
+      
+      /* The navigation menu links */
+      #navlinks a ,#stickylinks a{
+        padding: 8px 8px 8px 32px;
+        text-decoration: none;
+        font-size: 25px;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+      }
+      
+      /* When you mouse over the navigation links, change their color */
+      #navlinks a:hover ,#stickylinks a:hover{
+        color: #f1f1f1;
+      }
+      
+      /* Position and style the close button (top right corner) */
+      #navlinks .closebtn ,#stickylinks .closebtn{
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 50px;
+        margin-left: 50px;
+        z-index: 15;
+      }
+      
+      /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+      #body {
+        transition: margin-left .5s;
+        padding: 20px;
+      }
+      
+      /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+      @media screen and (max-height: 450px) {
+        #navlinks ,#stickylinks{padding-top: 15px;}
+        #navlinks a ,#stickylinks a{font-size: 18px;}
+      }
+}
+
+
+@media screen and (max-width:950px){
+    #feature{
+        display:none;
+    }
+    #navbar1{
         width: 96%;
         padding:1% 2%;
     }
-    #navbar>div:nth-child(2){
+    #navbar1>div:nth-child(2){
         display: flex;
         flex-direction: column;
     }
-    #navbar>div:nth-child(2)>a{
-        margin: 10px;
+    #navbar1>div:nth-child(2)>a{
+        margin: 2%;
     }
-
-    /* sticky navbar */
-    #sticky{
+    #sticky1{
         height:100px;
         padding:1% 2%;
         width:96%;
     }
-    #sticky>div:nth-child(2){
+    #sticky1>div:nth-child(2){
         display: flex;
         flex-direction: column;
     }
-    #sticky>div:nth-child(2)>a{
-        margin: 10px;
+    #sticky1>div:nth-child(2)>a{
+        margin: 2%;
     }
 
+
+    
     /* body */
     #top{
         width:90%;
@@ -40,15 +103,18 @@
     }
     #top input{
         border: 2px solid #f16631;
-        width:410px;
+        width:90%;
         text-align: center;
         padding:16px 0px;
         border-radius: 8px;
     }
     #top button{
         margin-top: 10px;
-        width:410px;
+        width:90%;
         border-radius: 8px;
+    }
+    iframe{
+        height:400px;
     }
     #mid3{
         text-align: center;
@@ -64,7 +130,7 @@
     }
     #slider1>div>div+div>img{
         margin: auto;
-        width:400px;
+        width:70%;
     }
     #slider1>div>div:last-child{
         display: flex;
@@ -83,11 +149,12 @@
         grid-template-rows: repeat(4,1fr);
         row-gap: 10px;
     }
+    
     #main>div:last-child{
-        width:50%;
+        width:60%;
     }
     #main>div:last-child>button{
-        padding:3% 8%;
+        padding:2% 6%;
     }
     #mainone>div:nth-child(3){
         display:grid;
@@ -127,25 +194,71 @@
     }
     #botfooter>div:last-child>div{
         margin: auto;
-    }
+    }   
 }
-@media screen and (min-width:0px) and (max-width:600px)
-{
+
+
+@media screen and (max-width:600px){
     #logo{
         width:40%;
         margin: auto;
     }
     #logo>ul>li{
-        padding:10px;
+        padding:1%;
     }
     #logo>ul>li>a>img{
         width:10px;
         height:10px;
+    }
+    #logo+div{
+        width:50%;
+    }
+    #logo+div>button{
+        padding:1% 5%;
     }
     #slider1>div>div:last-child{
         width:70%;
     }
     #slider1>div>div:last-child>button{
         padding:2% 5%;
+    }
+    iframe{
+        height:250px;
+    }
+    #top h1,#mid1 h2{
+        font-size: 30px;
+    }
+    #top p,#mid1 p,#slider1>div>div+div>div>h5,#text{
+        font-size: 14px;
+    }
+    #mid3>h3,#main>h3,#mainone>h3,#mainone>h4,#mid3>h4,#main>h4,#slider>h3,#slider>h4,#name{
+        font-size: 25px;
+    }
+    #mid3>p,#slider1>div>div+div>div>p,#role{
+        font-size: 10px;
+    }
+}
+
+
+@media screen and (max-width:470px){
+    #mid2>div{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    #main>div>div>div>h5,#mainone>div>div>div>h5{
+        font-size: 10px;
+    }
+    #main>div>div>div>p,#mainone>div>div>div>p{
+        font-size: 5px;
+    }
+    iframe{
+        height:200px;
+    }
+    #top h1{
+        font-size: 20px;
+    }
+    #top p{
+        font-size: 10px;
     }
 }

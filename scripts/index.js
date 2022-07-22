@@ -87,6 +87,8 @@ function creatediv(divindex){
     clientlogo.setAttribute("src",sliderData[divindex].logos);
 }
 
+
+// side navigation drawer
 rightbtn.addEventListener("click",function(){
     divindex++;
     if(divindex===sliderData.length){
@@ -102,4 +104,30 @@ leftbtn.addEventListener("click",function(){
     creatediv(divindex);
 });
 
+
+function openNav() {
+    document.getElementById("navlinks").style.width = "40%";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+  /* Set the width of the side navigation to 0 */
+function closeNav() {
+    document.getElementById("navlinks").style.width = "0";
+    document.body.style.backgroundColor = "white";
+}
+
+
+function openNav1() {
+    document.getElementById("stickylinks").style.width = "40%";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+  /* Set the width of the side navigation to 0 */
+function closeNav1() {
+    document.getElementById("stickylinks").style.width = "0";
+    document.body.style.backgroundColor = "white";
+}
+
+
+function feat(){
+    document.getElementById("feature").style.height="500px";
+}
 
