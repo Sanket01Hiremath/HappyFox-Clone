@@ -126,8 +126,3 @@ function closeNav1() {
     document.body.style.backgroundColor = "white";
 }
 
-
-function feat(){
-    document.getElementById("feature").style.height="500px";
-}
-

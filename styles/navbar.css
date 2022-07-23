@@ -21,7 +21,7 @@
     font-family: sans-serif;
     text-decoration:none;
 }
-#navbar>div:nth-child(4)>button,#navbar1>div:nth-child(4)>button{
+#navbar>div:nth-child(4)>a>button,#navbar1>div:nth-child(4)>a>button{
     padding:10px 20px;
     background-color: #ff6200;
     border: 0;
@@ -47,7 +47,7 @@
     font-weight: lighter;
     font-family: sans-serif;
 }
-#sticky>div:nth-child(4)>button,#sticky1>div:nth-child(4)>button{
+#sticky>div:nth-child(4)>a>button,#sticky1>div:nth-child(4)>a>button{
     padding:10px 20px;
     font-family: sans-serif;
     background-color: transparent;
@@ -58,21 +58,27 @@
 }
 
 /* features popup page */
-#feature{
-    display:flex;
-    width:96%;
+#x,#y,#z{
+    display: none;
+    position: sticky;
+    top:60px;
+    width:90%;
+    text-align: right;
+    z-index: 1;
+    margin-left: 50px;
+}
+.feature{
+    display: flex;
+    width: 100%;
     height:auto;
     padding:1% 1%;
     background-color: rgb(255, 255, 255);
-    position:absolute;
-    top:150px;
-    z-index: 10;
     box-shadow: rgb(148, 148, 187) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 }
-#feature>div{
+.feature>div{
     width:80%;
 }
-#feature>div>p{
+.feature>div>p{
     text-align: left;
     padding-left:10px;
     font-size:11px;
@@ -82,32 +88,38 @@
 }
 #overview{
     width:100%;
-    padding-right:100px;
+    margin-right:100px;
+    padding-top: 5px;
+}
+#overview>a{
+    width:50%;
 }
 #overview>a,#features>a,#integrations>a{
     display: flex;
     text-decoration: none;
     color:#858585;
     padding:5px;
+    margin:10px;
+    border-radius: 5px;
+}
+#overview>a:hover,#features>a:hover,#integrations>a:hover{
+    background-color: #85858518;
+}
+#integrations>a{
+    margin:5px;
 }
 #overview>a>img,#features>a>img,#integrations>a>img{
     width:15px;
     height:15px;
     padding:5px 5px 20px; 
 }
-#overview>a>span,#features>a>span{
+#overview>a>span,#features>a>span,#integrations>a>span{
+    text-align: left;
     font-family: sans-serif;
     font-size: 11px;
     width:100px;
     padding:5px;
     color: #212529;
-}
-#integrations>a>span{
-    font-family: sans-serif;
-    font-size: 11px;
-    width:100px;
-    padding:5px;
-    color: #000000;
 }
 #overview>a>span>span,#features>a>span>span{
     font-weight: lighter;
@@ -121,12 +133,12 @@
     grid-template-rows: repeat(4,1fr);
     column-gap:50px;
 }
-#feature>div:last-child{
+.feature>div:last-child{
     width:100%;
     background-color: #e6e6e6;
 }
 #integrations{
-    width:30%;
+    width:50%;
     display: flex;
     flex-direction: column;
 }

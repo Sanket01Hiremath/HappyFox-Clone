@@ -1,5 +1,5 @@
 @media screen and (min-width:950px){
-    #navbar,#sticky,#feature{
+    #navbar,#sticky{
         display: none;
     }
 }
@@ -61,9 +61,9 @@
 
 
 @media screen and (max-width:950px){
-    #feature{
+    /* #feature{
         display:none;
-    }
+    } */
     #navbar1{
         width: 96%;
         padding:1% 2%;
