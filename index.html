@@ -37,7 +37,9 @@
             <a href="">Operations Support<img src="https://assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt=""></a>
         </div>
         <div>
-            <button>Log in</button>
+            <a href="login.html">
+                <button>Log in</button>
+            </a>
         </div>
     </div>
     <div id="navbar">
@@ -62,35 +64,78 @@
             <img src="https://assets.www.happyfox.com/v2/images/site-nav/helpdesk-logo.svg" alt="logo">
         </div>
         <div id="navlinks1">
-            <a class="fea" href="javascript:void(0)" onclick="feat()">Features <img src="https://assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt=""></a>
-            <a href="">Solutions <img src="https://assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt=""></a>
-            <a href="">pricing</a>
-            <a href="">Resources <img src="https://assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt=""></a>
+            <a id="fea" onclick="document.getElementById('x').style.display='block';document.getElementById('y').style.display='none';document.getElementById('z').style.display='none'">Features <img src="https://assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt=""></a>
+            <a onclick="document.getElementById('y').style.display='block';document.getElementById('x').style.display='none';document.getElementById('z').style.display='none'">Solutions <img src="https://assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt=""></a>
+            <a href="agentPricing.html">pricing</a>
+            <a onclick="document.getElementById('z').style.display='block';document.getElementById('y').style.display='none';document.getElementById('x').style.display='none'">Resources <img src="https://assets.www.happyfox.com/v2/images/site-nav/menu-togle-arrow-gray.svg" alt=""></a>
         </div>
         <div>
-            <button>Get a Demo</button>
+            <a href="demo.html">
+                <button>Get a Demo</button>
+            </a>
         </div>
     </div>
-    <div id="feature">
-        <div>
-            <p>OVERVIEW</p>
-            <div id="overview">
+    <div id="x">
+        <span class="close" onclick="document.getElementById('x').style.display='none'">X</span>
+        <div class="feature">
+            <div>
+                <p>OVERVIEW</p>
+                <div id="overview">
+                </div>
             </div>
-        </div>
-        <div>
-            <p>FEATURES</p>
-            <div id="features">
+            <div>
+                <p>FEATURES</p>
+                <div id="features">
+                </div>
+                <a href=""></a>
             </div>
-            <a href=""></a>
-        </div>
-        <div>
-            <p>INTEGRATIONS</p>
-            <div id="integrations">
+            <div>
+                <p>INTEGRATIONS</p>
+                <div id="integrations">
+                </div>
+                <a href=""></a>
             </div>
-            <a href=""></a>
-        </div>
+        </div>`` 
     </div>
-
+    <div id="y">
+        <span class="close" onclick="document.getElementById('y').style.display='none'">X</span>
+        <div class="feature">
+            <div>
+                <p>INDUSTRIES</p>
+                <div id="features">
+                </div>
+                <a href=""></a>
+            </div>
+            <div>
+                <p>BUSINESS</p>
+                <div id="integrations">
+                </div>
+                <a href=""></a>
+            </div>
+        </div>`` 
+    </div>
+    <div id="z">
+        <span class="close" onclick="document.getElementById('z').style.display='none'">X</span>
+        <div class="feature">
+            <div>
+                <p>OVERVIEW</p>
+                <div id="overview">
+                </div>
+            </div>
+            <div>
+                <p>FEATURES</p>
+                <div id="features">
+                </div>
+                <a href=""></a>
+            </div>
+            <div>
+                <p>INTEGRATIONS</p>
+                <div id="integrations">
+                </div>
+                <a href=""></a>
+            </div>
+        </div>`` 
+    </div>
 
     <div id="body">
         <div id="top">
@@ -144,7 +189,7 @@
                     </div>
                     <div>
                         <button>View all customer stories</button>
-                        <button>Get a Demo</button>
+                        <button onclick="document.location='demo.html'">Get a Demo</button>
                     </div>
                 </div>
             </div>
@@ -185,7 +230,7 @@
                 </div>
                 <div>
                     <button>View all features</button>
-                    <button>Get a Demo</button>
+                    <button onclick="document.location='demo.html'">Get a Demo</button>
                 </div>
             </div>
         </div>
@@ -224,7 +269,7 @@
                     </div>
                 </div>
                 <div>
-                    <button>Get a Demo</button>
+                    <button onclick="document.location='demo.html'">Get a Demo</button>
                 </div>
             </div>
         </div>
@@ -290,7 +335,7 @@
                 </div>
                 <div>
                     <button>view all integrations</button>
-                    <button>Get a Demo</button>
+                    <button onclick="document.location='demo.html'">Get a Demo</button>
                 </div>
             </div>
         </div>
@@ -444,5 +489,7 @@
 </body>
 <script src="./scripts/index.js"></script>
 <script src="./scripts/features.js"></script>
+<script src="./scripts/solutions.js"></script>
+<script src="./scripts/resources.js"></script>
 </html>
 
