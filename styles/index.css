@@ -18,21 +18,20 @@
 }
 #top>div{
     margin: auto;
-    border: 2px solid #f16631;
     width:100%;
-    border-radius: 8px;
 }
 #top input{
-    width:50%;
+    margin-right:-9px;
+    border: 3px solid #f16631;
+    border-radius: 8px;
+    width:150px;
     text-align: left;
     font-size: 14px;
-    border-radius: 2px;
+    border-radius: 5px;
     padding:16px 25px;
-    border:0px;
-    
 }
 #top button{
-    width:40%;
+    width:200px;
     background-color: #f16631;
     color: white;
     border: 0px;
