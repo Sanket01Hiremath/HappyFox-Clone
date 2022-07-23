@@ -1,10 +1,86 @@
-#demoform>input{
-    width:40%;
-    height:20px;
-    padding:5px;
+#main{
+    background-color: rgb(26, 27, 44);
+    display:flex;
 }
-#demoform>select{
-    width:41%;
-    height:35px;
+#left>ul>li{
+    list-style: none;
+    font-size: 15px;
+    font-weight: 500;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    background: url("https://assets.www.happyfox.com/img/check-list-icon.svg") no-repeat left center;
+    color:white;
+    font-family: sans-serif;
+}
+#left>ul{
+    padding-left:0px;
+    font-weight: 500;
+}
+#left{
+    margin-top: 100px;
+    width:500px;
+    padding-left:100px;
+}
+#left>h1{
+    font-size: 25px;
+    color: white;
+    font-family: sans-serif;
+}
+#right{
+    width:400px;
+    margin-top: 50px;
+    background-color: white;
+    margin:50px;
+    border-radius: 15px;
+    text-align: center;
+}
+#right>h1{
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+#right>form{
+    height:100%;
+    width:100%;
+    margin: 20px 0px;
+}
+.feild{
+    width:80%;
+    height:25px;
+    border:0.5px solid grey;
+    margin:15px 0px;
+    border-radius: 5px;
     padding:5px;
+    font-family: sans-serif;
+}
+#getdemo{
+    
+    background-color: red;
+    font-weight: bold;
+    border:0px;
+    color: white;
+}
+#demoform>p{
+    font-weight: 100;
+    font-size: 10px;
+    font-family: sans-serif;
+}
+.pc{
+    background-color: rgba(0, 0, 0, 0.22);
+    border-radius: 10px;
+    margin:20px 5px;
+    padding:10px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width:70%;
+}
+.pc>img{
+    width:70px;
+}
+.pc>div>p{
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: 500;
+    color: white;
 }
